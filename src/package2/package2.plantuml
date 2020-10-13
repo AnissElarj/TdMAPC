@@ -1,0 +1,52 @@
+@startuml
+
+title __PACKAGE2's Class Diagram__\n
+
+  namespace package2 {
+
+    interface package2.Forum {
+     +add(): String
+          +remove(): void
+          +size(): int
+    }
+
+    interface package2.Theme {
+     +add(): String
+          +remove(): void
+          +size(): int
+      }
+
+    interface package2.Salon {
+    +add(): String
+         +remove(): void
+         +size(): int
+      }
+
+
+    interface package2.Message {
+      }
+
+    interface package2.Composant {
+     +add(): String
+     +remove(): void
+     +size(): int
+   }
+
+     package2.Salon .up.|> package2.Composant
+     package2.Theme .up.|> package2.Composant
+     package2.Forum .up.|> package2.Composant
+
+     package2.Message -up-|> package2.Salon
+
+
+  }
+  
+
+
+
+right footer
+
+
+endfooter
+
+@enduml
