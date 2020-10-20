@@ -4,26 +4,26 @@ title __PACKAGE2's Class Diagram__\n
 
   namespace package2 {
 
-    interface package2.Forum {
+    class package2.Forum {
      +add(): String
           +remove(): void
           +size(): int
     }
 
-    interface package2.Theme {
+    class package2.Theme {
      +add(): String
           +remove(): void
           +size(): int
       }
 
-    interface package2.Salon {
+    class package2.Salon {
     +add(): String
          +remove(): void
          +size(): int
       }
 
 
-    interface package2.Message {
+    class package2.Message {
       }
 
     interface package2.Composant {
